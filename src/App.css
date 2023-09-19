@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+header button{
+    background-color: #454969;
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+.modal-form{
+    background-color: rgb(12, 12, 12,0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    height: auto;
+    width: 30vw;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+}
+.formulario legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+.formulario div{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label{
+    padding-bottom:1rem;
+}
+.formulario input{
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.btn-form{
+    width: 100%;
+    height: 2rem;
+    background-color:#454969;
+    border: none;
+    color: white;
+}
+.close-modal{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.content-users{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-left: 1.5rem;
+}
+.article{
+    border: 1px solid rgb(0, 0, 0,0.2);
+    padding:1.5rem;
+    border-radius: 0.5rem;
+}
+.nombres{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.article label{
+    color: gray;
+    font-size: 1.2rem;
+}
+.correo{
+    font-size: 1.1rem;
+    padding:1rem 0;
+}
+.cumpleaños{
+    font-size: 1.1rem;
+    padding:1rem 0;
+}
+.btns{
+    display: flex;
+    justify-content: flex-end;
+}
+.btns button{
+    height: 2rem;
+    width: 3rem;
+    background-color: red;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btns .editar{
+    background-color: white;
+    border: 1px solid gray;
+}
+.btns button img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.content-modal{
+    background-color: rgb(0, 0, 0,0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background-color: white;
+    padding: 2rem;
+}
+.modal button{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background-color: #454969;
+    color: white;
+    text-transform: uppercase;
+}
+@media(max-width:768px){
+ .content-users{
+    grid-template-columns: 1fr 1fr;
+ }
+}
+
+
+
+
+
